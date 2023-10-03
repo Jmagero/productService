@@ -16,7 +16,7 @@ public class ProductServiceApplication {
 
 	@PostConstruct
 	public void init(){
-		log.info("Application started");
+		log.info("Application started finallly");
 	}
 
 
