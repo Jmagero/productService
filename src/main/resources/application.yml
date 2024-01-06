@@ -1,7 +1,8 @@
 server:
   port: 8082
-
 spring:
+  application:
+    name: ProductService
   datasource:
     url: jdbc:mysql://${DB_HOST:localhost}:3306/productDB
     password: john16;13
@@ -19,3 +20,12 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
         format_sql: true
 
+
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
